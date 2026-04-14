@@ -322,7 +322,10 @@
     }
 
 
-    observeContainer('#namu_darbai_tabs');
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+	    observeContainer('#namu_darbai_tabs');
+    });
 
 
 

@@ -40,6 +40,10 @@
             background-color: var(--dark-tamo-bg-out);
         }
 
+        * {
+            border-color: var(--dark-tamo-bg-light) !important;
+        }
+
         #c_main, #s_menu, .full_height_col  {
             background-color: var(--dark-tamo-bg-main);
         }
@@ -170,7 +174,12 @@
 
         .col-md-2 .f-header {
             background-color: var(--dark-tamo-bg-light) !important;
+            color: var(--dark-tamo-blue) !important;
         }
+
+        .row .col-md-4 div {
+	        color: var(--dark-tamo-bg-lighter) !important;
+	    }
 
 
 
@@ -209,6 +218,21 @@
           background-color: var(--dark-tamo-bg-light) !important;
         }
 
+        td {
+          border-color: var(--dark-tamo-bg-light) !important;
+          color: var(--dark-tamo-bg-lighter) !important;
+        }
+
+        .flex.mt-8.mr-8 div div div:first-child {
+          color: var(--dark-tamo-bg-lighter) !important;
+          background-color: var(--dark-tamo-bg-light) !important;
+        }
+
+        .flex.mt-8.mr-8 div div{
+          border-color: var(--dark-tamo-bg-light) !important;
+        }
+
+
 
 
 
@@ -216,6 +240,23 @@
 
 
     `;
+
+    const extraCSS = {
+     "PeriodoVertinimas": `
+        .c_main_table tbody tr:last-child {
+          background-color: var(--dark-tamo-bg-light) !important;
+        }
+     `
+    }
+
+    const path = window.location.href
+
+    for (const extra in extraCSS){
+        if (path.includes(extra)){
+            style.textContent += extraCSS[extra]
+        }
+    }
+
     document.head.appendChild(style);
 
     // extras

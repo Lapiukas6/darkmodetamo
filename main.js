@@ -6,8 +6,8 @@
 // @author       lapiukas5
 // @match        https://dienynas.tamo.lt/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tamo.lt
-// @downloadURL  https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/main.js
-// @updateURL    https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/main.js
+// @downloadURL  https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/refs/heads/main/main.js
+// @updateURL    https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/refs/heads/main/main.js
 // @grant        none
 // @run-at document-start
 // ==/UserScript==

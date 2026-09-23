@@ -15,8 +15,8 @@
 (function() {
     'use strict';
 
-    const style = document.createElement("style");
-    style.textContent = `
+    const cstyle = document.createElement("style");
+    cstyle.textContent = `
         :root {
             --dark-tamo-bg-out: #141414;
             --dark-tamo-bg-main: #111;
@@ -35,7 +35,11 @@
             --dark-tamo-baseiconcolor: #86b3cb;
 
         }
+    `
 
+
+    const style = document.createElement("style");
+    style.textContent = `
         html {
             background-color: var(--dark-tamo-bg-out);
         }
@@ -246,7 +250,33 @@
         .c_main_table tbody tr:last-child {
           background-color: var(--dark-tamo-bg-light) !important;
         }
+     `,
+     "Prisijungimas": `
+        html > body {
+            display: flex;
+            justify-content: center;
+            background-color: var(--dark-tamo-bg-out) !important;
+        }
+        .col_right {
+            background-color: var(--dark-tamo-bg-out) !important;
+        }
+        #main_form {
+            background-color: var(--dark-tamo-bg-light) !important;
+            color: var(--dark-tamo-bg-lighter);
+            border-radius: 20px;
+        }
+        #main_form input {
+            background-color: var(--dark-tamo-bg-main) !important;
+            color: var(--dark-tamo-text-white)
+        }
      `
+    }
+
+    const extraJS = {
+        "Prisijungimas": async (params) => {
+            const footer = document.createElement("footer")
+            
+        }
     }
 
     const path = window.location.href
@@ -257,6 +287,13 @@
         }
     }
 
+    for (const extra in extraJS){
+        if (path.includes(extra)){
+            extraJS[extra]()
+        }
+    }
+
+    document.head.appendChild(cstyle);
     document.head.appendChild(style);
 
     // extras

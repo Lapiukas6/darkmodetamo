@@ -269,6 +269,15 @@
             background-color: var(--dark-tamo-bg-main) !important;
             color: var(--dark-tamo-text-white)
         }
+     `,
+     "AtostoguDatos": `
+        #c_main .td div {
+            color: var(--dark-tamo-text-white) !important;
+        }
+
+        #c_main .td div > .error {
+            color: #d8333e !important;
+        }
      `
     }
 

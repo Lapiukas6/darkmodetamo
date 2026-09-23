@@ -23,6 +23,7 @@
             --dark-tamo-bg-border: #121212;
             --dark-tamo-bg-footer: #151515;
             --dark-tamo-bg-light: #222;
+            --dark-tamo-bg-light-hover: #333;
             --dark-tamo-bg-lighter: #888;
             --dark-tamo-bg-title: #1C3E50;
             --dark-tamo-bg-title-red: #770000;
@@ -232,11 +233,18 @@
           background-color: var(--dark-tamo-bg-light) !important;
         }
 
-        .flex.mt-8.mr-8 div div{
+        .flex.mt-8.mr-8 div div {
           border-color: var(--dark-tamo-bg-light) !important;
         }
 
+        .col-md-14 .c_btn {
+          color: var(--dark-tamo-blue);
+          background-color: var(--dark-tamo-bg-light);
+        }
 
+        .col-md-14 > .c_btn.utility:hover {
+          background-color: var(--dark-tamo-bg-light-hover) !important;
+        }
 
 
 

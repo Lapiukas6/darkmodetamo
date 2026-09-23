@@ -4,7 +4,7 @@
 // @version      2026-09-23
 // @description  tamo dark mode theme
 // @author       lapiukas5
-// @match        https://dienynas.tamo.lt/*
+// @match        https://*.tamo.lt/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tamo.lt
 // @downloadURL  https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/refs/heads/main/main.js
 // @updateURL    https://raw.githubusercontent.com/Lapiukas6/darkmodetamo/refs/heads/main/main.js
@@ -42,6 +42,10 @@
     const style = document.createElement("style");
     style.textContent = `
         html {
+            background-color: var(--dark-tamo-bg-out);
+        }
+
+        html > body {
             background-color: var(--dark-tamo-bg-out);
         }
 
@@ -246,9 +250,31 @@
           background-color: var(--dark-tamo-bg-light-hover) !important;
         }
 
+        .col-md-4 .c_btn {
+          color: var(--dark-tamo-blue);
+          background-color: var(--dark-tamo-bg-light);
+        }
 
+        .col-md-4 > .c_btn.utility:hover {
+          background-color: var(--dark-tamo-bg-light-hover) !important;
+        }
 
+        #c_main .c_btn.utility {
+          color: var(--dark-tamo-blue);
+          background-color: var(--dark-tamo-bg-light) !important;
+        }
 
+        #c_main .c_btn.utility:hover {
+          background-color: var(--dark-tamo-bg-light-hover) !important;
+        }
+
+        div.text_block:hover, input:hover, select:hover, textarea:hover {
+          background-color: var(--dark-tamo-bg-light-hover) !important;
+        }
+
+        .collapsible .section_header:hover {
+          background-color: var(--dark-tamo-bg-light-hover) !important;
+        }
 
 
     `;
@@ -295,6 +321,16 @@
         .col-md-14 > table td > span {
             background-color: var(--dark-tamo-bg-main) !important;
         }
+     `,
+     "NeformalusisSvietimas": `
+        #c_main table tr td {
+            background-color: transparent !important;
+        }
+     `,
+     "NamuDarbai": `
+        .row .col-md-4 div {
+	        color: #000 !important;
+	    }
      `
     }
 

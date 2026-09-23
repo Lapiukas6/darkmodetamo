@@ -286,6 +286,15 @@
         #c_main .td div > .error {
             color: #d8333e !important;
         }
+     `,
+     "TamoIsmaniems": `
+        .subscr-box.active {
+            background-color: var(--dark-tamo-bg-light) !important;
+        }
+
+        .col-md-14 > table td > span {
+            background-color: var(--dark-tamo-bg-main) !important;
+        }
      `
     }
 

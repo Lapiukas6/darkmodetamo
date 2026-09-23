@@ -303,6 +303,10 @@
             background-color: var(--dark-tamo-bg-main) !important;
             color: var(--dark-tamo-text-white)
         }
+
+        .col_left {
+            display: none;
+        }
      `,
      "AtostoguDatos": `
         #c_main .td div {

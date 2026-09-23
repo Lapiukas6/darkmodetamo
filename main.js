@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tamo
 // @namespace    http://tampermonkey.net/
-// @version      2026-02-23
+// @version      2026-09-23
 // @description  tamo dark mode theme
 // @author       lapiukas5
 // @match        https://dienynas.tamo.lt/*

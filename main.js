@@ -335,6 +335,14 @@
         .row .col-md-4 div {
 	        color: #000 !important;
 	    }
+     `,
+     "Messages": `
+        
+     `,
+     "EgzaminuVertinimai": `
+        .attention_message {
+            background-color: var(--dark-tamo-bg-light) !important;
+        }
      `
     }
 

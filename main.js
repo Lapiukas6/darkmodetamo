@@ -343,6 +343,14 @@
         .attention_message {
             background-color: var(--dark-tamo-bg-light) !important;
         }
+     `,
+     "Naudotojas": `
+        .c_block h3 {
+            color: var(--dark-tamo-text-white) !important;
+        }
+        .info-panel.info {
+            background-color: var(--dark-tamo-bg-out) !important;
+        }
      `
     }
 
